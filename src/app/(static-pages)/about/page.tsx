@@ -1,4 +1,3 @@
-// app/nosotros/page.tsx
 export default function NosotrosPage() {
   return (
     <main className="min-h-screen bg-white text-gray-800 px-6 py-12 md:px-20 lg:px-32">
