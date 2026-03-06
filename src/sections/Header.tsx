@@ -1,6 +1,6 @@
 "use client"
-import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logo.svg";
+import ArrowRight from "@/public/arrow-right.svg";
+import Logo from "@/public/logo.svg";
 import MenuIcon from "@/assets/MenuIcon.svg";
 import Link from 'next/link'
 import { useEffect, useState, useRef } from "react";
