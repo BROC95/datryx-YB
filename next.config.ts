@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // turbopack: {},
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
-    return config;
-  },
+  turbopack: {},
+  // ✅ Eliminá el bloque webpack completo — ya no es necesario
+  // porque los SVGs ahora son <img> estáticos desde public/
 };
 
 export default nextConfig;
