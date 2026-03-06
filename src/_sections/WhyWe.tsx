@@ -1,3 +1,5 @@
+import CarruselWrapper from "@/components/CarruselWrapper";
+import { productCarrusel } from "@/lib/services_dat";
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -8,13 +10,18 @@ export default function WhyWe() {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[500px] rounded-[2rem] overflow-hidden">
-              <Image 
+              {/* <Image 
                 src="https://picsum.photos/seed/crafting/800/1000" 
                 alt="Proceso artesanal" 
                 fill 
                 className="object-cover opacity-80"
                 referrerPolicy="no-referrer"
-              />
+              /> */}
+               {productCarrusel.map((demo) => (
+                <div    key={demo.id} className="p-6">
+                  <CarruselWrapper imagenes={demo.imgs} />
+                </div>
+              ))}
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent"></div>
             </div>
 
@@ -30,7 +37,7 @@ export default function WhyWe() {
               <div className="space-y-6">
                 {[
                   "Productos únicos y hechos a medida",
-                  "Atención personalizada en cada paso",
+                  "Atención personalizada en cada caso",
                   "Materiales de la más alta calidad",
                   "Ideal para regalos especiales y memorables",
                   "Diseños exclusivos que no encontrarás en otro lugar"

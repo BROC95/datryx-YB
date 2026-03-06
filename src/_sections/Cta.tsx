@@ -7,7 +7,7 @@ export default function Cta() {
     return (      <section className="py-32 bg-cyan-100 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://picsum.photos/seed/fabric/1920/1080" 
+            src="/img/ropa1.jpeg" 
             alt="Fondo de tela" 
             fill 
             className="object-cover opacity-10 mix-blend-multiply"

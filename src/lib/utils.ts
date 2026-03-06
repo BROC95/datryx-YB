@@ -6,8 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
-  const whatsappNumber = "1234567890"; // Replace with actual number
+  const whatsappNumber = "+5493751534778"; // Replace with actual number
   const whatsappMessage = encodeURIComponent("¡Hola! Me gustaría hacer un pedido personalizado.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
-  export { whatsappUrl, whatsappNumber, whatsappMessage }
+  const instagramUrl = "https://www.instagram.com/carameloboutique.eldo/";
+  const facebookUrl = "https://www.facebook.com/people/Caramelo-Boutique/100048891286379/#";
+  export { whatsappUrl, whatsappNumber, whatsappMessage, instagramUrl, facebookUrl }

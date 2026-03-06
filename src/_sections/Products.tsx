@@ -1,5 +1,9 @@
+"use client"
+// import ImageModal from "@/components/imagemodal";
+import products from "@/lib/services_dat";
 import { whatsappUrl } from "@/lib/utils";
 import { motion } from "motion/react";
+import ImageModal from "@/components/ImageModal";
 import Image from "next/image";
 
 export default function Products(){
@@ -17,12 +21,7 @@ export default function Products(){
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { img: "mug", title: "Tazas personalizadas", desc: "Con fotos o frases" },
-              { img: "tshirt", title: "Camisetas con diseño", desc: "Sublimación premium" },
-              { img: "bag", title: "Bolsos artesanales", desc: "Marroquinería exclusiva" },
-              { img: "giftbox", title: "Regalos temáticos", desc: "Cajas sorpresa a medida" }
-            ].map((product, idx) => (
+            {products.map((product, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -32,13 +31,17 @@ export default function Products(){
                 className="group cursor-pointer"
               >
                 <div className="relative h-80 rounded-2xl overflow-hidden mb-4 bg-stone-200">
-                  <Image 
-                    src={`https://picsum.photos/seed/${product.img}/600/800`} 
+                  {/* <Image 
+                    src={`${product.img}`} 
                     alt={product.title} 
                     fill 
+                    // width={900}
+                    // height={500}
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
-                  />
+                  /> */}
+
+                  <ImageModal demo={product}></ImageModal>
                 </div>
                 <h3 className="text-lg font-serif font-bold text-stone-800">{product.title}</h3>
                 <p className="text-sm text-stone-500">{product.desc}</p>

@@ -1,4 +1,4 @@
-import { whatsappUrl } from "@/lib/utils";
+import { facebookUrl, instagramUrl, whatsappUrl } from "@/lib/utils";
 import Image from "next/image";
 import LogoCaramelo from "@/public/logo-caramelo.png";
 export default function Footer(){
@@ -17,10 +17,12 @@ export default function Footer(){
           </div>
             Caramelo <span className="text-cyan-500 italic font-light">Boutique</span>
           </div>
+          <p className="mb-6">Misiones, Argentina.</p>
           <p className="mb-6">Regalos personalizados, diseño y costura creativa.</p>
+          <p className="mb-6">Hacemos envios a todo el país.</p>
           <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="hover:text-white transition-colors">Facebook</a>
+            <a href={instagramUrl} className="hover:text-white transition-colors">Instagram</a>
+            <a href={facebookUrl} className="hover:text-white transition-colors">Facebook</a>
             <a href={whatsappUrl} className="hover:text-white transition-colors">WhatsApp</a>
           </div>
           <p>&copy; {new Date().getFullYear()} Caramelo Boutique. Todos los derechos reservados.</p>

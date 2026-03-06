@@ -12,10 +12,10 @@ const playfair = Playfair_Display({
   variable: '--font-serif',
 });
 
-export const metadata: Metadata = {
-  title: 'Caramelo Boutique | Regalos Personalizados y Costura Creativa',
-  description: 'Boutique creativa especializada en regalos personalizados, costura creativa, diseño de modas y más.',
- icons: {
+
+export const metadata = {
+  title: "Caramelo Boutique | Regalos Personalizados y Costura Creativa",
+   icons: {
     icon: [
       { url: "/favicon.ico" },
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
@@ -23,6 +23,31 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+  description:
+    "Caramelo Boutique ofrece accesorios personalizados, vinchas y productos de sublimación para eventos y moda.",
+  keywords: [
+    "vinchas",
+    "accesorios personalizados",
+    "sublimación",
+    "vinchas para niñas",
+    "accesorios boutique",
+    "accesorios personalizados Argentina"
+  ],
+  openGraph: {
+    title: "Caramelo Boutique",
+    description:
+      "Vinchas, accesorios y productos personalizados para eventos.",
+    url: "https://caramelo-boutique.netlify.app",
+    siteName: "Caramelo Boutique",
+    images: [
+      {
+        url: "/public/logo-caramelo.png",
+        width: 1200,
+        height: 630
+      }
+    ],
+    type: "website"
+  }
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

@@ -58,7 +58,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
               <Image 
-                src="https://picsum.photos/seed/boutique/800/1000" 
+                src="/img/arbols.webp" 
                 alt="Regalos personalizados y costura creativa" 
                 fill 
                 className="object-cover"
