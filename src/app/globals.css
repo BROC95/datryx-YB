@@ -1,9 +1,13 @@
 @import "tailwindcss";
-
-:root {
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  border-width: 1px;
+border-color: red;
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -24,3 +28,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer components{
+  .btn{
+    /* @apply rounded-2xl px-4 py-2 text-sm font-semibold text-center cursor-pointer transition-colors duration-200 ease-in-out; */
+    @apply px-4 py-2 rounded-lg font-medium   justify-center  tracking-tight cursor-pointer  ;
+  }
+  .btn-primary{
+    @apply bg-black text-white
+  }
+  .btn-text{
+    @apply text-black bg-transparent hover:bg-gray-100
+  }
+  .logo-ticker-img{
+    @apply h-20 w-auto
+  }
+  .gradient-title{
+    /* @apply  font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 */
+    @apply text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-cyan-300 text-transparent  bg-clip-text mt-6 
+  }
+  .gradient-whatsapp{
+    /* @apply  font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 */
+    @apply text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-green-300 text-transparent  bg-clip-text mt-6 
+  }
+  .gradient-title-color{
+    @apply text-2xl bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text px-4 py-2 rounded-full font-bold
+  }
+  .gradient-bg-color{
+    @apply  bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)]  px-4 py-2 rounded-lg font-bold
+  }
+  .gradient-bg-whatsapp{
+    @apply  bg-[linear-gradient(to_right,green,white)]  px-4 py-2 rounded-full font-bold
+  }
+  .btn-text-whatsapp{
+    /* @apply text-black bg-transparent hover:bg-[linear-gradient(to_right,green/20,white)] */
+    @apply text-black bg-transparent hover:bg-green-400
+  }
+}
+
