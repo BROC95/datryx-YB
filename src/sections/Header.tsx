@@ -1,7 +1,7 @@
 "use client"
 import ArrowRight from "@/public/arrow-right.svg";
 import Logo from "@/public/logo.svg";
-import MenuIcon from "@/assets/MenuIcon.svg";
+import MenuIcon from "@/public/MenuIcon.svg";
 import Link from 'next/link'
 import { useEffect, useState, useRef } from "react";
 import { AbrirWhatsApp } from '@/components/whatsapptalk'

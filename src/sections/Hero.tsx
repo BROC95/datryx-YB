@@ -4,7 +4,7 @@
 import Visual from "@/assets/data/datadev.jpeg"
 // import Cylinder from "@/assets/form-cylinder.png"
 // import HalfTorus from "@/assets/form-half-torus.png"
-import ArrowRight from "@/assets/arrow-right.svg";
+import ArrowRight from "@/public/arrow-right.svg";
 // import Image from "next/image";
 // import { motion,useScroll,useTransform ,useMotionValue} from "framer-motion";
 // import { motion, useScroll, useTransform } from "framer-motion";

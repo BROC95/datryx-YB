@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo.svg"
+import Logo from "@/public/logo.svg"
 // import Star from "@/assets/form-emojistar.png"
 // import Torus from "@/assets/form-torus.png"
 // import Image from "next/image";
