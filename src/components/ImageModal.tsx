@@ -1,15 +1,22 @@
 'use client'
 import { useState } from "react";
-// import Image from "next/image";
 import Image from "next/image";
-type Producto = {
-  title: string;
-  desc: string;
+
+// type Producto = {
+//   nombre: string;
+//   descripcion: string;
 //   precio: number;
+//   imagen: string;
+// };
+
+type Demo = {
+  titulo: string;
+  descripcion: string;
+  link: string;
   img: string;
 };
 
-export default function ImageModal({ demo }: { demo: Producto }) {
+export default function ImageModal({ demo }: { demo: Demo }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -21,10 +28,9 @@ export default function ImageModal({ demo }: { demo: Producto }) {
       >
         <Image
           src={String(demo.img)}
-          alt={demo.title}
-        //   width={500}
-        //   height={300}
-        fill
+          alt={demo.titulo}
+          width={500}
+          height={300}
           className="w-full h-48 object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform"
         />
         {/* <h3 className="mt-3 text-lg font-semibold text-white">{demo.nombre}</h3> */}
@@ -34,7 +40,7 @@ export default function ImageModal({ demo }: { demo: Producto }) {
       {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-[9999]">
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 animate-fadeIn scale-105 border-4 border-cyan-500">
+          <div className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 animate-fadeIn scale-105 border-4 border-indigo-500">
             
             {/* Botón cerrar */}
             <button
@@ -48,7 +54,7 @@ export default function ImageModal({ demo }: { demo: Producto }) {
             {/* Imagen principal */}
             <Image
               src={String(demo.img)}
-              alt={demo.title}
+              alt={demo.titulo}
               width={600}
               height={600}
               className="rounded-xl object-contain max-h-[60vh] mx-auto drop-shadow-xl"
