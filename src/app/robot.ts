@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://caramelo-boutique.netlify.app/sitemap.xml"
+    sitemap: "https://datrix-yb.netlify.app/sitemap.xml"
   };
 }
