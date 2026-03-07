@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Datrix YB",
   description: "Creando soluciones tecnologicas",
+  verification: {
+    google: 'lwwLuQvKu0eg3XFvk_MCfeVkIYvYevYTmPoVBZc7Y8I',
+  },
 };
 
 export default function RootLayout({
