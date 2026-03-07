@@ -18,7 +18,7 @@ export const ProductShowCase = () => {
                         <p className="text-center py-4 px-9">Somos una empresa especializada en el desarrollo de software personalizado y análisis de datos avanzados. Acompañamos a empresas en su transformación digital mediante soluciones tecnológicas enfocadas en resolver desafíos reales y mejorar la toma de decisiones basada en datos.Somos una empresa especializada en el desarrollo de software personalizado y análisis de datos avanzados. Acompañamos a empresas en su transformación digital mediante soluciones tecnológicas enfocadas en resolver desafíos reales y mejorar la toma de decisiones basada en datos. </p>
                         <div className="flex justify-center mt-10 relative">
                         <div className="rounded-3xl">
-                            <Image src="/public/logo.svg" width={40} height={40} alt='logo datrix'/> 
+                            <Image src="/logo.svg" width={200} height={200} alt='logo datrix' className="rounded-3xl"/> 
                              <div/>
                             </div>
                         

@@ -98,7 +98,7 @@ export const Header = () => {
             aria-expanded={menuOpen}
           >
             <div className="h-5 w-5" > 
-              <Image src="/public/MenuIcon.svg" alt="Menú" width={20} height={20} />
+              <Image src="/MenuIcon.svg" alt="Menú" width={20} height={20} />
             </div>
           </button>
 
