@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import { numberAr, numberCo } from './whatsapptalk';
 
 type Country = "CO" | "AR";
 
 const WHATSAPP_NUMBERS: Record<Country, string> = {
-  CO: "+573127066940",
-  AR: "+5492915361152",
+  CO: numberCo,
+  AR: numberAr,
 };
 
 export default function ContactoPage() {

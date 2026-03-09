@@ -37,6 +37,7 @@ import logo from "@/assets/LogoDatrixYB.jpeg"
 
 
 import Link from 'next/link';
+import { numberAr, numberCo } from "@/components/whatsapptalk";
 export const Footer=() =>{
   return (
     <footer className="bg-gray-900 text-white py-10 overflow-x-hidden">
@@ -104,8 +105,8 @@ export const Footer=() =>{
 
         <a href="mailto:datrixyb@gmail.com" className=" hover:underline">datrixyb@gmail.com</a>
         <br />
-        +54 9 291  536 1152<br />
-            +57 312 7066940<br />
+        {numberCo}<br />
+            {numberAr}<br />
             Sede Principal en 
             Armenia ,Quindió, Colombia
           </p>

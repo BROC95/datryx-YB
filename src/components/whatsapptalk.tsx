@@ -1,12 +1,13 @@
 'use client';
-
+export const numberCo = "+573116381751";
+export const numberAr = "+5492915361152";
 export const AbrirWhatsApp = ({ country = "CO" }: { country?: "CO" | "AR" }) => {
   const numbers = {
-    CO: "+573127066940",
-    AR: "+5492915361152",
+    CO: numberCo,
+    AR: numberAr,
   };
 
-  const message = "¡Hola! Estoy interesado en tus servicios.";
+  const message = "¡Hola Datrix YB! Estoy interesado en adquirir tus servicios de software y análisis de datos. ¿Podrías enviarme la información sobre planes y precios para avanzar con la contratación?";
   const whatsappLink = `https://wa.me/${numbers[country]}?text=${encodeURIComponent(message)}`;
 
   return (
